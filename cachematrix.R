@@ -2,27 +2,21 @@
 ## functions do
 
 ## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {
-  inv <- NULL
-  
+  inv <- NULL  
   fun1 <- function(y) {
     x <- y
     inv <- NULL
   }
-  
   fun2 <- function() {
     x
   }
-  
   fun3 <- function(inverse) {
     inv <<- inverse
   }
-  
   fun4 <- function() {
     inv
   }
-  
   list(fun1 = fun1, fun2 = fun2, fun3 = fun3, fun4 = fun4)
 }
 
