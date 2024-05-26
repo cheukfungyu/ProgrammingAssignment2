@@ -7,8 +7,8 @@ makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   
   fun1 <- function(y) {
-    x <<- y
-    inv <<- NULL
+    x <- y
+    inv <- NULL
   }
   
   fun2 <- function() {
